@@ -1,0 +1,243 @@
+.capitalize {
+    text-transform: capitalize;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.i-flex {
+    display: inline-flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-flex-end {
+    align-items: flex-end;
+}
+
+.d-column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-50 {
+    gap: 50px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-80 {
+    gap: 80px;
+}
+
+.lh-160 {
+    line-height: 160%;
+}
+
+.lh-150 {
+    line-height: 150%;
+}
+
+.lh-140 {
+    line-height: 140%;
+}
+
+.lh-180 {
+    line-height: 180%;
+}
+
+.lh-120 {
+    line-height: 120%;
+}
+
+.lh-130 {
+    line-height: 130%;
+}
+
+.lh-110 {
+    line-height: 110%;
+}
+
+body {
+    background-color: #FAF4EE;
+}
+
+header {
+    max-width: 1150px;
+    margin: 20px auto 0px auto;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 60px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 10px 0 0 10px;
+        padding: 20px 30px;
+        background-color: #FF8D4D;
+
+        svg {
+            padding-left: 20px;
+
+        }
+
+        a {
+            color: #262626;
+            text-decoration: none;
+            font-size: 19px;
+            font-weight: 500;
+        }
+    }
+
+    .space {
+        flex-grow: 1;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: none;
+        align-self: stretch;
+    }
+
+    nav.list {
+        a {
+            padding: 26px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: none;
+            align-self: stretch;
+            text-align: center;
+            transition: background-color .3 ease;
+        }
+
+        a:hover:nth-child(1) {
+            background-color: #FCEBE2;
+        }
+
+        a:hover:nth-child(2) {
+            background-color: #FCEBE2;
+        }
+
+        a:hover:nth-child(3) {
+            background-color: #FCEBE2;
+        }
+
+        a:hover:nth-child(4) {
+            background-color: #FCEBE2;
+        }
+
+        a:hover:nth-child(5) {
+            background-color: #FCEBE2;
+        }
+
+        a:last-child {
+            background-color: #FF8D4D;
+            border-radius: 0 8px 8px 0;
+        }
+
+        a:last-child:hover {
+            background-color: #ff7a33;
+        }
+    }
+}
+
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+section.hero-section {
+    img {
+        background-color: #FFBE99;
+        border-radius: 10px;
+        border: 2px solid black;
+        height: 500px;
+    }
+
+    .hero-title {
+        p.head-p {
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            padding-bottom: 6px;
+            max-width: 300px;
+            border-bottom: 3px solid black;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 600;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            padding-bottom: 20px;
+
+            span {
+                color: #FF8D4D;
+            }
+        }
+
+        p.last-p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+
+        ul {
+            background-color: #FFEFE5;
+            padding: 30px 40px;
+            border: 3px solid black;
+            border-radius: 12px;
+            box-shadow: 6px 5px 0px 0px #FFD4C2;
+            
+
+            li {
+                font-family: 'Outfit', sans-serif;
+                color: #262626;
+                font-weight: 600;
+
+                h2 {
+                    font-size: 34px;
+                    margin-bottom: 5px;
+                }
+                p{
+                    font-size: 15px;
+                    white-space: nowrap;
+                }
+            }
+        }
+        
+    }
+}
