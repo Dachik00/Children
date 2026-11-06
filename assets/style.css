@@ -375,7 +375,9 @@ section.testimonials-section {
     }
 
     .cards-scroll {
+        max-width: 1150px;
         align-items: stretch;
+
         svg.left-arrow {
             padding: 19px 18px;
             background-color: #ffff;
@@ -385,6 +387,15 @@ section.testimonials-section {
             align-self: center;
         }
     }
+
+    svg.right-arrow {
+            padding: 19px 18px;
+            background-color: #ffff;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: center;
+        }
 
     .review {
         border: 2px solid black;
@@ -397,10 +408,7 @@ section.testimonials-section {
             cursor: pointer;
         }
 
-        svg.profile-david{
-            cursor: pointer;
-            padding-top: 25px;
-        }
+       
 
         p.profile-name {
             font-size: 20px;
@@ -419,6 +427,6 @@ section.testimonials-section {
     }
 }
 
-.los{
+.los {
     margin-top: 100px;
 }
