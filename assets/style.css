@@ -1,3 +1,9 @@
+:root {
+    --color-gray: #333333;
+}
+
+
+/* //////////////////////////////// */
 .capitalize {
     text-transform: capitalize;
 }
@@ -40,6 +46,18 @@
 
 .gap-40 {
     gap: 40px;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-60 {
+    gap: 60px;
+}
+
+.gap-70 {
+    gap: 70px;
 }
 
 .gap-20 {
@@ -144,22 +162,27 @@ header {
 
         a:hover:nth-child(1) {
             background-color: #FCEBE2;
+            font-weight: 500;
         }
 
         a:hover:nth-child(2) {
             background-color: #FCEBE2;
+            font-weight: 500;
         }
 
         a:hover:nth-child(3) {
             background-color: #FCEBE2;
+            font-weight: 500;
         }
 
         a:hover:nth-child(4) {
             background-color: #FCEBE2;
+            font-weight: 500;
         }
 
         a:hover:nth-child(5) {
             background-color: #FCEBE2;
+            font-weight: 500;
         }
 
         a:last-child {
@@ -169,6 +192,7 @@ header {
 
         a:last-child:hover {
             background-color: #ff7a33;
+            font-weight: 500;
         }
     }
 }
@@ -181,6 +205,8 @@ header {
 }
 
 section.hero-section {
+    margin-bottom: 150px;
+
     img {
         background-color: #FFBE99;
         border-radius: 10px;
@@ -210,8 +236,8 @@ section.hero-section {
 
         p.last-p {
             font-family: 'Poppins', sans-serif;
-            font-size: 12px;
-            font-weight: 600;
+            font-size: 16px;
+            font-weight: 500;
             margin-bottom: 50px;
         }
 
@@ -221,7 +247,7 @@ section.hero-section {
             border: 3px solid black;
             border-radius: 12px;
             box-shadow: 6px 5px 0px 0px #FFD4C2;
-            
+
 
             li {
                 font-family: 'Outfit', sans-serif;
@@ -232,12 +258,167 @@ section.hero-section {
                     font-size: 34px;
                     margin-bottom: 5px;
                 }
-                p{
+
+                p {
                     font-size: 15px;
                     white-space: nowrap;
                 }
             }
         }
-        
+
     }
+}
+
+article .text-head {
+    p:not(.section-description) {
+        font-family: 'Outfit', sans-serif;
+        padding: 8px 17px;
+        font-size: 16px;
+        font-weight: 500;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        color: var(--color-gray);
+    }
+
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 14px;
+    }
+
+    p.section-description {
+        font-family: 'Outfit', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        max-width: 880px;
+        text-align: center;
+        color: var(--color-gray);
+        margin-bottom: 80px;
+    }
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+section {
+    .cards-section {
+        position: relative;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 500px;
+        padding: 32px 10px 32px 32px;
+        box-shadow: 6px 6px 0px 0px #000;
+
+        svg {
+            position: absolute;
+            padding: 18px 16px;
+            background-color: #FFDECC;
+            border: 2px solid black;
+            border-radius: 10px;
+            z-index: 1;
+            top: -30px;
+            left: 14px;
+        }
+
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            margin-block: 24px 16px;
+
+        }
+
+        p {
+            font-family: 'Outfit', sans-serif;
+            max-width: 320px;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--color-gray);
+        }
+    }
+}
+
+
+section.testimonials-section {
+    p:not(.profile-name, .review-text, .section-description) {
+        font-family: 'Outfit', sans-serif;
+        padding: 8px 17px;
+        font-size: 16px;
+        font-weight: 500;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-block: 150px 15px;
+        color: var(--color-gray);
+    }
+
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 14px;
+    }
+
+    p.section-description {
+        font-family: 'Outfit', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        max-width: 800px;
+        text-align: center;
+        color: var(--color-gray);
+        margin-bottom: 80px;
+    }
+
+    .cards-scroll {
+        align-items: stretch;
+        svg.left-arrow {
+            padding: 19px 18px;
+            background-color: #ffff;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: center;
+        }
+    }
+
+    .review {
+        border: 2px solid black;
+        box-shadow: 6px 6px 0px 0px #000;
+        border-radius: 10px;
+        padding: 40px 40px;
+        font-family: 'Outfit', sans-serif;
+
+        svg.profile-image {
+            cursor: pointer;
+        }
+
+        svg.profile-david{
+            cursor: pointer;
+            padding-top: 25px;
+        }
+
+        p.profile-name {
+            font-size: 20px;
+            font-weight: 600;
+            padding-block: 10px 24px;
+        }
+
+        p.review-text {
+            max-width: 260px;
+            margin-top: 24px;
+            font-weight: 500;
+            text-align: center;
+            font-size: 16px;
+            color: var(--color-gray);
+        }
+    }
+}
+
+.los{
+    margin-top: 100px;
 }
