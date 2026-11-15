@@ -1,3 +1,8 @@
+* {
+    text-decoration: none;
+}
+
+
 :root {
     --color-gray: #333333;
 }
@@ -78,6 +83,10 @@
 
 .gap-80 {
     gap: 80px;
+}
+
+.gap-24 {
+    gap: 24px;
 }
 
 .lh-160 {
@@ -536,7 +545,7 @@ section.last-section {
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     margin-bottom: 200px;
-    
+
 
     .navigate-box {
         padding: 48px 40px;
@@ -567,7 +576,7 @@ section.last-section {
         }
 
         button {
-            margin-top: auto; 
+            margin-top: auto;
             font-family: 'Outfit', sans-serif;
             width: 100%;
             padding: 18px 20px;
@@ -579,6 +588,150 @@ section.last-section {
             box-shadow: 5px 5px 0px black;
             cursor: pointer;
             font-weight: 500;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+            &:hover {
+                 
+                    /* NEW: ღილაკი ჩრდილის მხარეს გადაინაცვლებს და ჩრდილი ქრება */
+                    transform: translate(6px, 6px);
+                    box-shadow: 0 0 0 #000;
+                
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #fff;
+    box-shadow: 5px 5px 0px 2px black;
+    border-radius: 10px;
+    padding: 100px 117px;
+    margin: 40px 50px;
+
+    .footer-container {
+
+        .brand {
+            font-family: 'Outfit', sans-serif;
+
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                font-weight: 600;
+                color: #000000;
+            }
+
+            p {
+                width: 520px;
+                font-size: 20px;
+                margin-block: 20px 50px;
+                color: #4C4C4D;
+            }
+
+            ul.contacts-footer {
+                li {
+                    a {
+                        font-weight: 500;
+
+                        svg {
+                            padding: 11px 9px;
+                            border: solid black;
+                            border-radius: 7px;
+                            background-color: #FFF5F0;
+
+                        }
+                    }
+                }
+
+                li:last-child {
+                    margin-bottom: 50px;
+
+                    svg {
+                        padding: 10px 11px;
+                    }
+                }
+            }
+        }
+
+        .footer-nav {
+            .footer-col {
+                font-family: 'Outfit', sans-serif;
+
+                h2 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #262626;
+                    margin-bottom: 25px;
+                }
+
+                ul {
+
+                    li {
+                        a {
+
+                            font-size: 20px;
+                            font-weight: 500;
+                            color: #333333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-middle {
+        padding-block: 50px;
+        margin-top: 50px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid #000000;
+
+        ul.policy-list {
+            margin: 0;
+
+            li {
+
+                a {
+                    font-family: 'Outfit', sans-serif;
+                    font-size: 18px;
+                    color: black;
+                }
+            }
+        }
+
+        ul.social-list {
+            margin: 0;
+
+            li {
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 16px;
+                    border: 2px solid black;
+                    background-color: #FFDECC;
+                    border-radius: 5px;
+                    transition: transform 0.6s ease;
+
+                    &:hover {
+                        transform: rotateY(360deg);
+                    }
+                }
+            }
+
+            li:nth-child(2) {
+                a {
+                    padding: 18px 16px;
+                }
+            }
+        }
+    }
+
+    ul.arr{
+        li{
+            font-family: 'Outfit', sans-serif;
+            margin-top: 40px;
+            font-size: 18px;
+            color: #656567;
+
         }
     }
 }
