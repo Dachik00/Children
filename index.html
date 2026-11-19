@@ -39,25 +39,32 @@
             <a href="#">admissions</a>
             <a href="#">student life</a>
             <a href="#">contact</a>
-
         </nav>
+        <a class="burger" href="#"><img src="./assets/images/burger-menu.svg" alt="burger menu"></a>
     </header>
 
 
     <main>
         <section class="hero-section d-flex container gap-50 align-center">
-            <img src="./assets/images/child-img.png" alt="Hero img">
+
+            <picture class="responsive-img">
+                <!-- Mobile: tall portrait crop -->
+                <source media="(max-width: 390px)" srcset="./assets/children-mobile.png">
+                <!-- Desktop: full landscape -->
+                <img src="./assets/images/child-img.png" alt="astronaut picture">
+            </picture>
+
 
             <div class="hero-title ">
                 <p class="head-p">Welcome to Little Learners Academy</p>
-                <h1 class="lh-130">Where Young Minds Blossom and <span>Dreams Take Flight. </span></h1>
+                <h1 class="main-title lh-130">Where Young Minds Blossom and <span>Dreams Take Flight. </span></h1>
                 <p class="last-p lh-150">Our kinder garden school provides a nurturing and stimulating environment,
                     fostering a
                     love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey
                     together!</p>
 
 
-                <ul class="d-flex gap-40">
+                <ul class="stats-card d-flex gap-40">
                     <li>
                         <h2 class="lh-150">+7000</h2>
                         <p>Students Passed Out</p>
@@ -85,7 +92,7 @@
 
     <article>
         <div class="text-head d-flex d-column align-center">
-            <p>Children Deserve Bright Future</p>
+            <p class="sub-label">Children Deserve Bright Future</p>
             <h2>Our Benefits</h2>
             <p class="section-description lh-150">With a dedicated team of experienced educators, state-of-the-art
                 facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.
@@ -206,7 +213,7 @@
             </svg>
 
 
-            <div class="review d-flex d-column align-center">
+            <div class="review-main d-flex d-column align-center">
                 <svg class="profile-image" xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66"
                     fill="none">
                     <rect x="0.5" y="0.5" width="65" height="65" rx="32.5" fill="#FFF5F0" />
@@ -587,7 +594,7 @@
                 <a href="#" class="logo d-flex align-center gap-10"><img src="./assets/images/footer-logo.png"
                         alt="footer logo"><span> Little Learners</span></a>
 
-                <p class="lh-150">We believe in the power of play to foster creativity, problem-solving skills, and
+                <p class="footer-p lh-150">We believe in the power of play to foster creativity, problem-solving skills, and
                     imagination.</p>
 
                 <ul class="contacts-footer d-flex d-column gap-24">
@@ -656,7 +663,7 @@
                 </div>
 
                 <div class="footer-col">
-                    <h2>Contact Us</h2>
+                    <h2 class="margin-top">Contact Us</h2>
                     <ul class="d-flex d-column gap-24">
 
                         <li><a href="#">Information</a></li>
@@ -667,7 +674,7 @@
         </div>
 
         <div class="footer-middle d-flex justify-between align-center">
-            <ul class="policy-list d-flex gap-15 align-center">
+            <ul class="policy-list d-flex gap-10 align-center">
                 <li><a href="#">Terms of Service</a></li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="2" height="27" viewBox="0 0 2 27" fill="none">
                     <line x1="1" y1="4.37114e-08" x2="0.999999" y2="27" stroke-width="2" stroke="#262626" />
